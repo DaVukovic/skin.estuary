@@ -1001,6 +1001,15 @@
 							<align>right</align>
 						</control>
 					</control>
+                                        <control type="label">
+                                                <visible>Integer.IsGreater(System.ProfileCount,1) + Skin.HasSetting(show_profilename)</visible>
+                                                <font>font_clock</font>
+                                                <shadowcolor>text_shadow</shadowcolor>
+                                                <height>200</height>
+                                                <width>auto</width>
+                                                <animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+                                                <label>$INFO[System.ProfileName], </label>
+                                        </control>
 					<control type="label">
 						<font>font_clock</font>
 						<shadowcolor>text_shadow</shadowcolor>
